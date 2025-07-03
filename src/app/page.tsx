@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Stethoscope, Calendar, ShieldCheck, HeartPulse, Brain, Bone, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import TestimonialsCarousel from '@/components/testimonials-carousel';
 
 export default function Home() {
   return (
@@ -124,49 +124,8 @@ export default function Home() {
       <section id="testimonials" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center font-headline">What Our Patients Say</h2>
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
-            <Card>
-              <CardContent className="pt-6">
-                <div className="flex items-start">
-                  <Avatar>
-                    <AvatarImage src="https://placehold.co/40x40.png" alt="Patient photo" data-ai-hint="person happy" />
-                    <AvatarFallback>JD</AvatarFallback>
-                  </Avatar>
-                  <div className="ml-4">
-                    <p className="italic">"The care was exceptional. The nurse was professional and kind, making a difficult time much easier. Highly recommend Home Healing Care."</p>
-                    <p className="mt-4 font-semibold">- Jane Doe</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="pt-6">
-                <div className="flex items-start">
-                  <Avatar>
-                    <AvatarImage src="https://placehold.co/40x40.png" alt="Patient photo" data-ai-hint="person smiling" />
-                    <AvatarFallback>SM</AvatarFallback>
-                  </Avatar>
-                  <div className="ml-4">
-                    <p className="italic">"Booking was so easy, and the symptom checker gave me peace of mind before the doctor's visit. A truly modern healthcare experience."</p>
-                    <p className="mt-4 font-semibold">- John Smith</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="pt-6">
-                <div className="flex items-start">
-                  <Avatar>
-                    <AvatarImage src="https://placehold.co/40x40.png" alt="Patient photo" data-ai-hint="woman happy" />
-                    <AvatarFallback>MP</AvatarFallback>
-                  </Avatar>
-                  <div className="ml-4">
-                    <p className="italic">"I'm so grateful for their elder care services. They've been a lifeline for my mother and our entire family."</p>
-                    <p className="mt-4 font-semibold">- Mary Poppins</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="mt-12">
+            <TestimonialsCarousel />
           </div>
         </div>
       </section>
