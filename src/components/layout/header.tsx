@@ -14,44 +14,43 @@ export default function Header({ navLinks }: { navLinks: NavLink[] }) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
-        <div className="mr-4 hidden md:flex">
-          <Logo />
-        </div>
-        
-        <div className="md:hidden">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="w-[300px]">
-              <nav className="flex flex-col gap-4 mt-8">
-                <div className="mb-4">
-                  <Logo />
-                </div>
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={cn(
-                      "block px-2 py-1 text-lg",
-                      pathname === link.href ? "text-primary font-semibold" : "text-muted-foreground"
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-            </SheetContent>
-          </Sheet>
+      <div className="container flex h-16 items-center justify-between">
+        {/* Division 1: Logo & Mobile Menu */}
+        <div className="flex items-center gap-2">
+            <div className="md:hidden">
+                <Sheet>
+                    <SheetTrigger asChild>
+                    <Button variant="ghost" size="icon">
+                        <Menu className="h-6 w-6" />
+                        <span className="sr-only">Toggle Menu</span>
+                    </Button>
+                    </SheetTrigger>
+                    <SheetContent side="left" className="w-[300px]">
+                    <nav className="flex flex-col gap-4 mt-8">
+                        <div className="mb-4">
+                        <Logo />
+                        </div>
+                        {navLinks.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={cn(
+                            "block px-2 py-1 text-lg",
+                            pathname === link.href ? "text-primary font-semibold" : "text-muted-foreground"
+                            )}
+                        >
+                            {link.label}
+                        </Link>
+                        ))}
+                    </nav>
+                    </SheetContent>
+                </Sheet>
+            </div>
+            <Logo />
         </div>
 
-        {/* This new division groups all navigation and CTA links */}
-        <div className="flex flex-1 items-center justify-end gap-6">
-          <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
+        {/* Division 2: Desktop Navigation Links */}
+        <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -64,14 +63,14 @@ export default function Header({ navLinks }: { navLinks: NavLink[] }) {
                 {link.label}
               </Link>
             ))}
-          </nav>
+        </nav>
           
-          <Button asChild>
+        {/* Division 3: Book Now Button */}
+        <Button asChild>
             <Link href="/booking">
               <Stethoscope className="mr-2 h-4 w-4" /> Book Now
             </Link>
-          </Button>
-        </div>
+        </Button>
       </div>
     </header>
   );
