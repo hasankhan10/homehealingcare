@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Stethoscope, Calendar, ShieldCheck, HeartPulse, Brain, Bone, MessageCircle } from 'lucide-react';
+import { Stethoscope, Calendar, MessageCircle, Users, HeartHandshake, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import TestimonialsCarousel from '@/components/testimonials-carousel';
@@ -81,42 +81,47 @@ export default function Home() {
 
       <section id="services" className="py-12 sm:py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold font-headline">Our Services</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold font-headline">Our Promise To You</h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            We offer a wide range of services to meet your unique health needs.
+            When you choose Home Healing Care, you're not just getting a service; you're gaining a partner in your health journey.
           </p>
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <HeartPulse className="h-10 w-10 mx-auto text-accent" />
-                <h3 className="mt-4 font-semibold">General Check-up</h3>
-                <p className="mt-2 text-sm text-muted-foreground">Routine health assessments and preventive care.</p>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="text-center">
+              <CardHeader>
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <HeartHandshake className="h-8 w-8" />
+                </div>
+                <CardTitle className="mt-4">100% Trusted Professionals</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Every member of our team is vetted, certified, and deeply committed to providing compassionate and expert care.</p>
               </CardContent>
             </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <Brain className="h-10 w-10 mx-auto text-accent" />
-                <h3 className="mt-4 font-semibold">Neurology</h3>
-                <p className="mt-2 text-sm text-muted-foreground">Specialized care for neurological conditions.</p>
+            <Card className="text-center">
+              <CardHeader>
+                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                   <CheckCircle className="h-8 w-8" />
+                </div>
+                <CardTitle className="mt-4">Tailored For You</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">We work with you and your family to create a flexible care plan that fits your specific needs, schedule, and preferences.</p>
               </CardContent>
             </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <Bone className="h-10 w-10 mx-auto text-accent" />
-                <h3 className="mt-4 font-semibold">Orthopedics</h3>
-                <p className="mt-2 text-sm text-muted-foreground">Post-surgery and injury recovery support.</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <ShieldCheck className="h-10 w-10 mx-auto text-accent" />
-                <h3 className="mt-4 font-semibold">Elder Care</h3>
-                <p className="mt-2 text-sm text-muted-foreground">Comprehensive care for senior citizens.</p>
+            <Card className="text-center">
+              <CardHeader>
+                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                   <Users className="h-8 w-8" />
+                </div>
+                <CardTitle className="mt-4">Peace of Mind</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">With our reliable and professional support, you can rest assured that you or your loved one is in safe, capable hands.</p>
               </CardContent>
             </Card>
           </div>
           <Button asChild className="mt-12" variant="outline">
-            <Link href="/services">View All Services</Link>
+            <Link href="/services">Learn More</Link>
           </Button>
         </div>
       </section>
