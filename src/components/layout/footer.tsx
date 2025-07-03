@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t bg-secondary">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-6">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <Logo />
@@ -55,12 +55,12 @@ export default function Footer() {
             <h3 className="font-semibold">Contact Us</h3>
             <address className="mt-4 space-y-2 text-sm text-muted-foreground not-italic">
               <p>123 Health St, Medtown, USA</p>
-              <p>Email: <a href="mailto:contact@hcc.com" className="hover:text-primary">contact@hcc.com</a></p>
+              <p>Email: <a href="mailto:contact@hcc.com" className="hover:text-primary">contact@homehealingcare.com</a></p>
               <p>Phone: <a href="tel:123-456-7890" className="hover:text-primary">(123) 456-7890</a></p>
             </address>
           </div>
         </div>
-        <div className="mt-8 border-t pt-4 text-center text-sm text-muted-foreground">
+        <div className="mt-6 border-t pt-3 text-center text-sm text-muted-foreground">
           <p>&copy; {year} Home Healing Care. All rights reserved.</p>
         </div>
       </div>
