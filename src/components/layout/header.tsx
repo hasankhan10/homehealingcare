@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import Logo from "@/components/logo";
-import { NAV_LINKS } from "@/lib/constants";
+import type { NavLink } from "@/lib/constants";
 
-export default function Header() {
+export default function Header({ navLinks }: { navLinks: NavLink[] }) {
   const pathname = usePathname();
 
   return (
@@ -32,7 +32,7 @@ export default function Header() {
                 <div className="mb-4">
                   <Logo />
                 </div>
-                {NAV_LINKS.map((link) => (
+                {navLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
@@ -50,7 +50,7 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
-          {NAV_LINKS.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}

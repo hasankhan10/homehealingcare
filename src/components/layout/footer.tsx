@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Facebook, Instagram } from "lucide-react";
 import Logo from "@/components/logo";
-import { NAV_LINKS } from "@/lib/constants";
+import type { NavLink } from "@/lib/constants";
 
-export default function Footer() {
+export default function Footer({ navLinks }: { navLinks: NavLink[] }) {
   const year = new Date().getFullYear();
 
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold">Quick Links</h3>
             <ul className="mt-4 space-y-2">
-              {NAV_LINKS.map((link) => (
+              {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
                     {link.label}
