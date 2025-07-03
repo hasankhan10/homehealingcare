@@ -17,7 +17,7 @@ export default function Home() {
           className="absolute inset-0 z-0 opacity-40"
           data-ai-hint="healthcare professional home"
         />
-        <div className="relative z-10 bg-black bg-opacity-50 p-8 rounded-lg">
+        <div className="relative z-10 mx-4 bg-black bg-opacity-50 p-8 rounded-lg">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">
             Compassionate Care, Right at Your Doorstep
           </h1>
