@@ -34,7 +34,7 @@ export default function ServicesPage() {
           </div>
           <div className="order-1 md:order-2">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="https://source.unsplash.com/random/600x400?caregiver,senior,home"
               alt="Caregiver providing personalized support"
               width={600}
               height={400}

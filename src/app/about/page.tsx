@@ -27,7 +27,7 @@ export default function AboutPage() {
           </div>
           <div>
             <Image
-              src="https://placehold.co/600x400.png"
+              src="https://source.unsplash.com/random/600x400?team,healthcare,professionals"
               alt="Team of healthcare professionals"
               width={600}
               height={400}
