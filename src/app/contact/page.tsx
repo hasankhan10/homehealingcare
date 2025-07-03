@@ -51,7 +51,7 @@ export default function ContactPage() {
                       <span className="font-medium text-foreground">Kolkata:</span> Sector V
                     </p>
                     <p className="text-muted-foreground">
-                      <span className="font-medium text-foreground">Bangalore:</span> Majestic / Newtown
+                      <span className="font-medium text-foreground">Bangalore:</span> Majestic
                     </p>
                   </div>
                 </div>
