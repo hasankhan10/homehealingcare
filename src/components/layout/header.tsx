@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 export default function Header({ navLinks }: { navLinks: NavLink[] }) {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +39,7 @@ export default function Header({ navLinks }: { navLinks: NavLink[] }) {
         {/* Division 1: Logo & Mobile Menu */}
         <div className="flex items-center gap-2 md:flex-1">
           <div className="md:hidden">
-            <Sheet>
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className={cn(!isScrolled && "hover:bg-accent-foreground/10")}>
                   <Menu className="h-6 w-6" />
@@ -57,6 +58,7 @@ export default function Header({ navLinks }: { navLinks: NavLink[] }) {
                     <Link
                       key={link.href}
                       href={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
                       className={cn(
                         "block px-2 py-1 text-lg",
                         pathname === link.href
