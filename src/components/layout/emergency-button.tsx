@@ -40,7 +40,7 @@ export default function EmergencyButton() {
               Call Emergency Services
             </Button>
           </a>
-          <a href="tel:123-456-7890" className="w-full">
+          <a href="tel:+919832711495" className="w-full">
              <Button variant="outline" className="w-full">
               Contact Our Support Line
             </Button>

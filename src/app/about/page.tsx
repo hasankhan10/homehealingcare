@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle } from 'lucide-react';
+import { HeartHandshake, UserCheck, Clock } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -41,78 +40,38 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center font-headline">Our Core Values</h2>
+          <h2 className="text-3xl font-bold text-center font-headline">Why Choose Us?</h2>
+          <p className="mt-4 text-muted-foreground text-center max-w-2xl mx-auto">
+            We are dedicated to providing you with the best in-home healthcare experience.
+          </p>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             <Card>
-              <CardHeader>
-                <CheckCircle className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Compassion</CardTitle>
+              <CardHeader className="text-center">
+                <HeartHandshake className="h-10 w-10 mx-auto text-accent mb-4" />
+                <CardTitle>Personalized Care</CardTitle>
               </CardHeader>
-              <CardContent>
-                We treat every patient with empathy, kindness, and understanding.
+              <CardContent className="text-center text-muted-foreground">
+                We create custom care plans tailored to your specific needs and preferences.
               </CardContent>
             </Card>
             <Card>
-              <CardHeader>
-                <CheckCircle className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Excellence</CardTitle>
+              <CardHeader className="text-center">
+                <UserCheck className="h-10 w-10 mx-auto text-accent mb-4" />
+                <CardTitle>Certified Professionals</CardTitle>
               </CardHeader>
-              <CardContent>
-                We are dedicated to providing the highest quality of medical care and service.
+              <CardContent className="text-center text-muted-foreground">
+                Our team consists of vetted, experienced, and compassionate healthcare experts.
               </CardContent>
             </Card>
             <Card>
-              <CardHeader>
-                <CheckCircle className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Integrity</CardTitle>
+              <CardHeader className="text-center">
+                <Clock className="h-10 w-10 mx-auto text-accent mb-4" />
+                <CardTitle>Reliable & Available</CardTitle>
               </CardHeader>
-              <CardContent>
-                We adhere to the highest ethical standards in all our interactions.
+              <CardContent className="text-center text-muted-foreground">
+                We offer flexible scheduling and support to be there when you need us most.
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center font-headline">Meet Our Team</h2>
-          <p className="mt-4 text-muted-foreground text-center max-w-2xl mx-auto">
-            Our team consists of certified, experienced, and dedicated healthcare professionals.
-          </p>
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="text-center">
-              <Avatar className="h-32 w-32 mx-auto">
-                <AvatarImage src="https://placehold.co/128x128.png" data-ai-hint="doctor portrait female" />
-                <AvatarFallback>DC</AvatarFallback>
-              </Avatar>
-              <h3 className="mt-4 text-xl font-semibold">Dr. Emily Carter</h3>
-              <p className="text-muted-foreground">Founder & Chief Medical Officer</p>
-            </div>
-             <div className="text-center">
-              <Avatar className="h-32 w-32 mx-auto">
-                <AvatarImage src="https://placehold.co/128x128.png" data-ai-hint="doctor portrait male" />
-                <AvatarFallback>JW</AvatarFallback>
-              </Avatar>
-              <h3 className="mt-4 text-xl font-semibold">Dr. John Williams</h3>
-              <p className="text-muted-foreground">Head of Geriatrics</p>
-            </div>
-             <div className="text-center">
-              <Avatar className="h-32 w-32 mx-auto">
-                <AvatarImage src="https://placehold.co/128x128.png" data-ai-hint="nurse portrait female" />
-                <AvatarFallback>SR</AvatarFallback>
-              </Avatar>
-              <h3 className="mt-4 text-xl font-semibold">Sarah Rodriguez, RN</h3>
-              <p className="text-muted-foreground">Lead Nurse</p>
-            </div>
-             <div className="text-center">
-              <Avatar className="h-32 w-32 mx-auto">
-                <AvatarImage src="https://placehold.co/128x128.png" data-ai-hint="manager portrait male" />
-                <AvatarFallback>MB</AvatarFallback>
-              </Avatar>
-              <h3 className="mt-4 text-xl font-semibold">Michael Brown</h3>
-              <p className="text-muted-foreground">Operations Manager</p>
-            </div>
           </div>
         </div>
       </section>

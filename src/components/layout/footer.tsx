@@ -9,7 +9,7 @@ export default function Footer({ navLinks }: { navLinks: NavLink[] }) {
   return (
     <footer className="border-t bg-secondary">
       <div className="container mx-auto px-4 py-6">
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
           <div className="md:col-span-1">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
@@ -54,9 +54,9 @@ export default function Footer({ navLinks }: { navLinks: NavLink[] }) {
           <div>
             <h3 className="font-semibold">Contact Us</h3>
             <address className="mt-4 space-y-2 text-sm text-muted-foreground not-italic">
-              <p>123 Health St, Medtown, USA</p>
-              <p>Email: <a href="mailto:contact@hcc.com" className="hover:text-primary">contact@homehealingcare.com</a></p>
-              <p>Phone: <a href="tel:123-456-7890" className="hover:text-primary">(123) 456-7890</a></p>
+              <p>Serving Kolkata & Bangalore</p>
+              <p>Email: <a href="mailto:homehealingcare@gmail.com" className="hover:text-primary">homehealingcare@gmail.com</a></p>
+              <p>Phone: <a href="tel:+919832711495" className="hover:text-primary">+91 98327 11495</a></p>
             </address>
           </div>
         </div>

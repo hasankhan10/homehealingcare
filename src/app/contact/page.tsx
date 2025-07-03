@@ -28,7 +28,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <a href="tel:123-456-7890" className="text-muted-foreground hover:text-primary">(123) 456-7890</a>
+                  <a href="tel:+919832711495" className="text-muted-foreground hover:text-primary">+91 98327 11495</a>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -37,16 +37,23 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <a href="mailto:contact@hcc.com" className="text-muted-foreground hover:text-primary">contact@homehealingcare.com</a>
+                  <a href="mailto:homehealingcare@gmail.com" className="text-muted-foreground hover:text-primary">homehealingcare@gmail.com</a>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary shrink-0">
                   <MapPin className="h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Address</h3>
-                  <p className="text-muted-foreground">123 Health St, Medtown, USA</p>
+                  <h3 className="font-semibold">Our Locations</h3>
+                  <div className="mt-2 space-y-2">
+                    <p className="text-muted-foreground">
+                      <span className="font-medium text-foreground">Kolkata:</span> Sector V
+                    </p>
+                    <p className="text-muted-foreground">
+                      <span className="font-medium text-foreground">Bangalore:</span> Majestic / Newtown
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

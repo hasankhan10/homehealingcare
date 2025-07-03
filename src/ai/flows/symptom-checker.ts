@@ -26,7 +26,7 @@ const SymptomCheckerOutputSchema = z.object({
   preliminaryGuidance: z
     .string()
     .describe(
-      'Preliminary guidance based on the described symptoms. Includes potential health concerns and recommended next steps.'
+      'Preliminary guidance based on the described symptoms. Includes potential health concerns, recommended next steps, and potential over-the-counter medications.'
     ),
 });
 export type SymptomCheckerOutput = z.infer<typeof SymptomCheckerOutputSchema>;
@@ -39,12 +39,14 @@ const prompt = ai.definePrompt({
   name: 'symptomCheckerPrompt',
   input: {schema: SymptomCheckerInputSchema},
   output: {schema: SymptomCheckerOutputSchema},
-  prompt: `You are an AI-powered symptom checker that provides preliminary guidance to patients based on their described symptoms.
+  prompt: `You are an AI-powered symptom checker. Your goal is to provide short, effective, and preliminary guidance.
 
-  Based on the following symptoms:
+  Based on the symptoms provided:
   {{symptoms}}
 
-  Provide preliminary guidance, including potential health concerns and recommended next steps. This is NOT a diagnosis, but rather guidance on what the patient should do next. Mention that they should consult a healthcare professional for proper diagnosis.`,
+  List potential health concerns, suggest possible next steps, and mention relevant over-the-counter medications that could help alleviate the symptoms.
+
+  You must strongly emphasize that this is not a medical diagnosis and the user must consult a healthcare professional for proper advice and treatment. Do not generate a long response. Keep it concise.`,
 });
 
 const symptomCheckerFlow = ai.defineFlow(

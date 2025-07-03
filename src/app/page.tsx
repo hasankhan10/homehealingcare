@@ -17,14 +17,14 @@ export default function Home() {
           className="absolute inset-0 z-0 opacity-40"
           data-ai-hint="healthcare professional home"
         />
-        <div className="relative z-10 mx-4 bg-black bg-opacity-50 p-8 rounded-lg">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight">
+        <div className="relative z-10 mx-4 bg-black bg-opacity-50 p-4 sm:p-6 md:p-8 rounded-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-headline tracking-tight">
             Compassionate Care, Right at Your Doorstep
           </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
             Experience professional and heartfelt healthcare services in the comfort of your home.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <Link href="/booking">Book a Service</Link>
             </Button>
@@ -85,7 +85,7 @@ export default function Home() {
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             We offer a wide range of services to meet your unique health needs.
           </p>
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <HeartPulse className="h-10 w-10 mx-auto text-accent" />
