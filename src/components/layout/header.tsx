@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import Logo from "@/components/logo";
 import type { NavLink } from "@/lib/constants";
@@ -46,6 +46,9 @@ export default function Header({ navLinks }: { navLinks: NavLink[] }) {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="w-[300px]">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                </SheetHeader>
                 <nav className="mt-8 flex flex-col gap-4">
                   <div className="mb-4">
                     <Logo />
