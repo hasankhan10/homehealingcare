@@ -28,7 +28,7 @@ export default function Footer() {
             <h3 className="font-semibold">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               {NAV_LINKS.map((link) => (
-                <li key={link.label}>
+                <li key={link.href}>
                   <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
                     {link.label}
                   </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-6 border-t pt-3 text-center text-sm text-muted-foreground">
-          <p>&copy; {year} Home Healing Care. All rights reserved.</p>
+          <p suppressHydrationWarning>&copy; {year} Home Healing Care. All rights reserved.</p>
         </div>
       </div>
     </footer>
