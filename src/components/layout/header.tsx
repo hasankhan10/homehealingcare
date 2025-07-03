@@ -49,22 +49,23 @@ export default function Header({ navLinks }: { navLinks: NavLink[] }) {
           </Sheet>
         </div>
 
-        <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                "transition-colors hover:text-foreground/80",
-                pathname === link.href ? "text-foreground" : "text-muted-foreground"
-              )}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-        
-        <div className="flex flex-1 items-center justify-end gap-4">
+        {/* This new division groups all navigation and CTA links */}
+        <div className="flex flex-1 items-center justify-end gap-6">
+          <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "transition-colors hover:text-foreground/80",
+                  pathname === link.href ? "text-foreground" : "text-muted-foreground"
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          
           <Button asChild>
             <Link href="/booking">
               <Stethoscope className="mr-2 h-4 w-4" /> Book Now
