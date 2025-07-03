@@ -101,7 +101,7 @@ export default function Header({ navLinks }: { navLinks: NavLink[] }) {
 
         {/* Division 3: Book Now Button */}
         <div className="flex flex-1 items-center justify-end">
-          <Button asChild>
+          <Button asChild className="hidden md:inline-flex">
             <Link href="/booking">
               <Stethoscope className="mr-2 h-4 w-4" /> Book Now
             </Link>
