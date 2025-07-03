@@ -4,11 +4,11 @@ import { Bot, AlertTriangle } from "lucide-react";
 export default function SymptomCheckerPage() {
   return (
     <div className="bg-secondary">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
         <div className="max-w-3xl mx-auto text-center">
             <Bot className="mx-auto h-12 w-12 text-primary" />
-            <h1 className="mt-4 text-4xl font-bold font-headline">AI Symptom Checker</h1>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <h1 className="mt-4 text-4xl sm:text-5xl font-bold font-headline">AI Symptom Checker</h1>
+            <p className="mt-4 text-lg sm:text-xl text-muted-foreground">
               Describe your symptoms below to get preliminary guidance. This tool is for informational purposes only.
             </p>
         </div>

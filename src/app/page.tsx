@@ -8,7 +8,7 @@ import TestimonialsCarousel from '@/components/testimonials-carousel';
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white">
+      <section className="relative h-[60vh] sm:h-[65vh] md:h-[70vh] flex items-center justify-center text-center text-white">
         <Image
           src="https://placehold.co/1920x1080.png"
           alt="Healthcare professional assisting an elderly person at home"
@@ -35,13 +35,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="how-it-works" className="py-16 md:py-24 bg-background">
+      <section id="how-it-works" className="py-12 sm:py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">How It Works</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold font-headline">How It Works</h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             Getting quality home care is as easy as 1-2-3.
           </p>
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardHeader>
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -79,13 +79,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="py-16 md:py-24 bg-secondary">
+      <section id="services" className="py-12 sm:py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Services</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold font-headline">Our Services</h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             We offer a wide range of services to meet your unique health needs.
           </p>
-          <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <HeartPulse className="h-10 w-10 mx-auto text-accent" />
@@ -121,9 +121,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="testimonials" className="py-16 md:py-24 bg-background">
+      <section id="testimonials" className="py-12 sm:py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center font-headline">What Our Patients Say</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center font-headline">What Our Patients Say</h2>
           <div className="mt-12">
             <TestimonialsCarousel />
           </div>

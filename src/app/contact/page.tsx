@@ -5,19 +5,19 @@ import { Mail, Phone, MapPin } from "lucide-react";
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-primary/10 py-20">
+      <section className="bg-primary/10 py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary-foreground">Contact Us</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+          <h1 className="text-4xl sm:text-5xl font-bold font-headline text-primary-foreground">Contact Us</h1>
+          <p className="mt-4 text-lg sm:text-xl max-w-3xl mx-auto text-muted-foreground">
             We're here to help. Reach out to us with any questions or to schedule a consultation.
           </p>
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12">
+      <section className="py-12 sm:py-16 md:py-24">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <div>
-            <h2 className="text-3xl font-bold font-headline">Get In Touch</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold font-headline">Get In Touch</h2>
             <p className="mt-4 text-muted-foreground">
               Please fill out the form, and our team will get back to you within 24 hours.
             </p>

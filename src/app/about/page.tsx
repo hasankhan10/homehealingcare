@@ -5,19 +5,19 @@ import { HeartHandshake, UserCheck, Clock } from 'lucide-react';
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-primary/10 py-20">
+      <section className="bg-primary/10 py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary-foreground">About Home Healing Care</h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+          <h1 className="text-4xl sm:text-5xl font-bold font-headline text-primary-foreground">About Home Healing Care</h1>
+          <p className="mt-4 text-lg sm:text-xl max-w-3xl mx-auto text-muted-foreground">
             Your trusted partner in providing professional, compassionate, and personalized healthcare at home.
           </p>
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <section className="py-12 sm:py-16 md:py-24">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold font-headline">Our Mission & Vision</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold font-headline">Our Mission & Vision</h2>
             <p className="mt-4 text-muted-foreground">
               Our mission is to make quality healthcare accessible and convenient by bringing professional medical services to your doorstep. We envision a world where everyone can receive the care they need in the comfort and familiarity of their own home, surrounded by their loved ones.
             </p>
@@ -38,13 +38,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-secondary">
+      <section className="py-12 sm:py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center font-headline">Why Choose Us?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center font-headline">Why Choose Us?</h2>
           <p className="mt-4 text-muted-foreground text-center max-w-2xl mx-auto">
             We are dedicated to providing you with the best in-home healthcare experience.
           </p>
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>
               <CardHeader className="text-center">
                 <HeartHandshake className="h-10 w-10 mx-auto text-accent mb-4" />
