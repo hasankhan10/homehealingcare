@@ -12,7 +12,7 @@ export default function Logo({ className }: { className?: string }) {
         height={32}
         className="h-8 w-8"
       />
-      <span className="text-xl font-bold font-headline tracking-tight">
+      <span className="text-lg sm:text-xl font-bold font-headline tracking-tight">
         Home Healing Care
       </span>
     </Link>
