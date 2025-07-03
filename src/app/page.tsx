@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="relative h-[60vh] sm:h-[65vh] md:h-[70vh] flex items-center justify-center text-center text-white">
         <Image
-          src="https://source.unsplash.com/random/1920x1080?healthcare,professional,home"
+          src="https://placehold.co/1920x1080.png"
           alt="Healthcare professional assisting an elderly person at home"
           layout="fill"
           objectFit="cover"
