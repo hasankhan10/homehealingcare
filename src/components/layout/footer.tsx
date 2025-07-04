@@ -62,6 +62,7 @@ export default function Footer({ navLinks }: { navLinks: NavLink[] }) {
         </div>
         <div className="mt-6 border-t pt-3 text-center text-sm text-muted-foreground">
           <p suppressHydrationWarning>&copy; {year} Home Healing Care. All rights reserved.</p>
+          <p className="mt-2">Made by Stova Media Agency</p>
         </div>
       </div>
     </footer>
