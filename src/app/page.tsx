@@ -11,11 +11,10 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="relative h-[60vh] sm:h-[65vh] md:h-[70vh] flex items-center justify-center text-center text-white">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="/hero-background.jpg"
           alt="Healthcare professional assisting an elderly person at home"
           fill
           className="absolute inset-0 z-0 opacity-40 object-cover"
-          data-ai-hint="healthcare professional"
         />
         <div className="relative z-10 mx-4 bg-black bg-opacity-50 p-4 sm:p-6 md:p-8 rounded-lg">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-headline tracking-tight">

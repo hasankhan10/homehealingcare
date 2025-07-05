@@ -28,12 +28,11 @@ export default function AboutPage() {
           </div>
           <div>
             <Image
-              src="https://placehold.co/600x400.png"
+              src="/about-team.jpg"
               alt="Team of healthcare professionals"
               width={600}
               height={400}
               className="rounded-lg shadow-lg"
-              data-ai-hint="team healthcare"
             />
           </div>
         </div>

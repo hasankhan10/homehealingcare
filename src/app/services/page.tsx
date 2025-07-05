@@ -35,12 +35,11 @@ export default function ServicesPage() {
           </div>
           <div className="order-1 md:order-2">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="/services-caregiver.jpg"
               alt="Caregiver providing personalized support"
               width={600}
               height={400}
               className="rounded-lg shadow-xl"
-              data-ai-hint="caregiver senior"
             />
           </div>
         </div>
