@@ -10,11 +10,21 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <section className="relative h-[60vh] sm:h-[65vh] md:h-[70vh] flex items-center justify-center text-center text-white">
+        {/* Mobile Image */}
         <Image
-          src="/hero-background.jpg"
+          src="/hero-background-mobile.jpg"
           alt="Healthcare professional assisting an elderly person at home"
           fill
-          className="absolute inset-0 z-0 opacity-40 object-cover"
+          className="absolute inset-0 z-0 opacity-40 object-cover md:hidden"
+          data-ai-hint="healthcare mobile"
+        />
+        {/* Desktop Image */}
+        <Image
+          src="/hero-background-desktop.jpg"
+          alt="Healthcare professional assisting an elderly person at home"
+          fill
+          className="absolute inset-0 z-0 opacity-40 object-cover hidden md:block"
+          data-ai-hint="healthcare professional"
         />
         <div className="relative z-10 mx-4 bg-black bg-opacity-50 p-4 sm:p-6 md:p-8 rounded-lg">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-headline tracking-tight">
