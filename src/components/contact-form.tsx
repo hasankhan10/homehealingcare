@@ -32,13 +32,45 @@ export default function ContactForm() {
     defaultValues: { name: "", email: "", subject: "", message: "" },
   });
 
-  function onSubmit(data: ContactFormValues) {
-    console.log(data);
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you shortly.",
-    });
-    form.reset();
+  async function onSubmit(data: ContactFormValues) {
+    const payload = {
+      ...data,
+      access_key: process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY, //Replace with your Web3Forms access key
+      subject: data.subject,
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for contacting us. We'll get back to you shortly.",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "Submission Failed",
+          description: result.message || "Please try again later.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Network Error",
+        description: "Unable to send message. Please check your connection.",
+        variant: "destructive",
+      });
+    }
   }
 
   return (
@@ -57,6 +89,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="email"
@@ -70,6 +103,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="subject"
@@ -83,6 +117,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="message"
@@ -101,7 +136,10 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full">Send Message</Button>
+
+        <Button type="submit" className="w-full">
+          Send Message
+        </Button>
       </form>
     </Form>
   );
