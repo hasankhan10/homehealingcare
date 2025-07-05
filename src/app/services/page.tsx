@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, HeartHandshake, CheckCircle } from "lucide-react";
@@ -39,7 +40,7 @@ export default function ServicesPage() {
               width={600}
               height={400}
               className="rounded-lg shadow-xl"
-              data-ai-hint="caregiver senior home"
+              data-ai-hint="caregiver senior"
             />
           </div>
         </div>
@@ -75,7 +76,7 @@ export default function ServicesPage() {
               <CardContent>
                 <p className="text-muted-foreground">We work with you and your family to create a flexible care plan that fits your specific needs, schedule, and preferences.</p>
               </CardContent>
-            </Card>
+            </card>
             <Card className="text-center">
               <CardHeader>
                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">

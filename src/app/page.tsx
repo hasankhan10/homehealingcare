@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Stethoscope, Calendar, MessageCircle, Users, HeartHandshake, CheckCircle } from 'lucide-react';
@@ -12,10 +13,9 @@ export default function Home() {
         <Image
           src="https://placehold.co/1920x1080.png"
           alt="Healthcare professional assisting an elderly person at home"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 z-0 opacity-40"
-          data-ai-hint="healthcare professional home"
+          fill
+          className="absolute inset-0 z-0 opacity-40 object-cover"
+          data-ai-hint="healthcare professional"
         />
         <div className="relative z-10 mx-4 bg-black bg-opacity-50 p-4 sm:p-6 md:p-8 rounded-lg">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-headline tracking-tight">

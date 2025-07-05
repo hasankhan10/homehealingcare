@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { HeartHandshake, UserCheck, Clock } from 'lucide-react';
@@ -32,7 +33,7 @@ export default function AboutPage() {
               width={600}
               height={400}
               className="rounded-lg shadow-lg"
-              data-ai-hint="team healthcare professionals"
+              data-ai-hint="team healthcare"
             />
           </div>
         </div>
