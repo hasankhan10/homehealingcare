@@ -35,8 +35,9 @@ export default function ServicesPage() {
           </div>
           <div className="order-1 md:order-2">
             <Image
-              src="/services-caregiver.jpg"
+              src="https://placehold.co/600x400.png"
               alt="Caregiver providing personalized support"
+              data-ai-hint="caregiver support"
               width={600}
               height={400}
               className="rounded-lg shadow-xl"
@@ -75,7 +76,7 @@ export default function ServicesPage() {
               <CardContent>
                 <p className="text-muted-foreground">We work with you and your family to create a flexible care plan that fits your specific needs, schedule, and preferences.</p>
               </CardContent>
-            </card>
+            </Card>
             <Card className="text-center">
               <CardHeader>
                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
