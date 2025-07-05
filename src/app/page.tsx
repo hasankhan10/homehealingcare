@@ -12,7 +12,7 @@ export default function Home() {
       <section className="relative h-[60vh] sm:h-[65vh] md:h-[70vh] flex items-center justify-center text-center text-white">
         {/* Mobile Image */}
         <Image
-          src="https://placehold.co/400x600.png"
+          src="https://i.pinimg.com/736x/4f/65/b6/4f65b6b0d08a8c950a9d0a8ed5525ec6.jpg"
           alt="Healthcare professional assisting an elderly person at home"
           fill
           className="absolute inset-0 z-0 opacity-40 object-cover md:hidden"
@@ -20,7 +20,7 @@ export default function Home() {
         />
         {/* Desktop Image */}
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="https://i.pinimg.com/736x/cf/a1/ee/cfa1ee06bf82375d4f6f567356055f07.jpg"
           alt="Healthcare professional assisting an elderly person at home"
           fill
           className="absolute inset-0 z-0 opacity-40 object-cover hidden md:block"
