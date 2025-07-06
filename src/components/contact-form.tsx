@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -15,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { Loader2 } from "lucide-react";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -27,12 +29,14 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 export default function ContactForm() {
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: { name: "", email: "", subject: "", message: "" },
   });
 
   async function onSubmit(data: ContactFormValues) {
+    setIsLoading(true);
     const payload = {
       ...data,
       access_key: process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY, //Replace with your Web3Forms access key
@@ -70,6 +74,8 @@ export default function ContactForm() {
         description: "Unable to send message. Please check your connection.",
         variant: "destructive",
       });
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -137,8 +143,9 @@ export default function ContactForm() {
           )}
         />
 
-        <Button type="submit" className="w-full">
-          Send Message
+        <Button type="submit" className="w-full" disabled={isLoading}>
+          {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+          {isLoading ? "Sending..." : "Send Message"}
         </Button>
       </form>
     </Form>
