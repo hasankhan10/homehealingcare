@@ -15,16 +15,18 @@ export default function Home() {
           src="https://i.pinimg.com/736x/4f/65/b6/4f65b6b0d08a8c950a9d0a8ed5525ec6.jpg"
           alt="Healthcare professional assisting an elderly person at home"
           fill
-          className="absolute inset-0 z-0 opacity-40 object-cover md:hidden"
+          className="absolute inset-0 z-0 object-cover md:hidden"
           data-ai-hint="healthcare mobile"
+          style={{ opacity: 1 }}
         />
         {/* Desktop Image */}
         <Image
           src="https://i.pinimg.com/736x/cf/a1/ee/cfa1ee06bf82375d4f6f567356055f07.jpg"
           alt="Healthcare professional assisting an elderly person at home"
           fill
-          className="absolute inset-0 z-0 opacity-40 object-cover hidden md:block"
+          className="absolute inset-0 z-0 object-cover hidden md:block"
           data-ai-hint="healthcare professional"
+          style={{ opacity: 1 }}
         />
         <div className="relative z-10 mx-4 bg-black bg-opacity-50 p-4 sm:p-6 md:p-8 rounded-lg">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold font-headline tracking-tight">
