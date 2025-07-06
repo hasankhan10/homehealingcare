@@ -17,6 +17,7 @@ export default function Home() {
           alt="Healthcare professional assisting an elderly person at home"
           fill
           priority
+          sizes="100vw"
           className="absolute inset-0 z-0 object-cover md:hidden"
           data-ai-hint="healthcare mobile"
         />
@@ -26,6 +27,7 @@ export default function Home() {
           alt="Healthcare professional assisting an elderly person at home"
           fill
           priority
+          sizes="100vw"
           className="absolute inset-0 z-0 object-cover hidden md:block"
           data-ai-hint="healthcare professional"
         />
