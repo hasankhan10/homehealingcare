@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const siteConfig = {
   name: 'Home Healing Care',
   description: 'Your trusted partner for in-home healthcare services, offering personalized care, AI symptom checking, and easy appointment booking.',
-  url: 'https://www.your-domain.com', // Replace with your actual domain
+  url: 'https://www.homehealingcare.com',
   ogImage: 'https://i.pinimg.com/736x/cf/a1/ee/cfa1ee06bf82375d4f6f567356055f07.jpg',
   links: {
     twitter: '#', // Replace with your Twitter/X profile
