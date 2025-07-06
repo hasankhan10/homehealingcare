@@ -1,8 +1,14 @@
 
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { HeartHandshake, UserCheck, Clock } from 'lucide-react';
 import MotionWrapper from '@/components/motion-wrapper';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn about our mission to provide professional, compassionate, and personalized healthcare at home. Meet our team of certified professionals.',
+};
 
 export default function AboutPage() {
   return (

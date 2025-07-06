@@ -1,4 +1,5 @@
 
+import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Stethoscope, Calendar, MessageCircle, Users, HeartHandshake, CheckCircle } from 'lucide-react';
@@ -6,6 +7,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import TestimonialsCarousel from '@/components/testimonials-carousel';
 import MotionWrapper from '@/components/motion-wrapper';
+
+export const metadata: Metadata = {
+  title: 'Compassionate In-Home Healthcare',
+  description: 'Experience professional and heartfelt healthcare services in the comfort of your home. Use our AI symptom checker or book an appointment today.',
+};
 
 export default function Home() {
   return (

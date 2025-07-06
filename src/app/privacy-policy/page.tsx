@@ -1,3 +1,15 @@
+
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'Read the privacy policy for Home Healing Care to understand how we collect, use, and protect your personal and health information.',
+  robots: {
+    index: false,
+    follow: true,
+  }
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <div className="container mx-auto px-4 py-12 sm:py-16 md:py-20">

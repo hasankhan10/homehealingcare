@@ -1,7 +1,14 @@
+
+import type { Metadata } from 'next';
 import ContactForm from "@/components/contact-form";
 import MotionWrapper from "@/components/motion-wrapper";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description: 'Get in touch with Home Healing Care. Find our phone number, email, and office locations, or send us a message through our contact form.',
+};
 
 export default function ContactPage() {
   return (

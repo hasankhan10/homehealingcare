@@ -1,3 +1,15 @@
+
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description: 'Review the Terms of Service for Home Healing Care before using our website or booking our in-home healthcare services.',
+  robots: {
+    index: false,
+    follow: true,
+  }
+};
+
 export default function TermsOfServicePage() {
     return (
       <div className="container mx-auto px-4 py-12 sm:py-16 md:py-20">

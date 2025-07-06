@@ -1,6 +1,13 @@
+
+import type { Metadata } from 'next';
 import SymptomCheckerForm from "@/components/symptom-checker-form";
 import { Bot, AlertTriangle } from "lucide-react";
 import MotionWrapper from "@/components/motion-wrapper";
+
+export const metadata: Metadata = {
+  title: 'AI Symptom Checker',
+  description: 'Use our free AI-powered symptom checker for preliminary guidance on your health concerns. Fast, informative, and confidential.',
+};
 
 export default function SymptomCheckerPage() {
   return (

@@ -1,10 +1,16 @@
 
+import type { Metadata } from 'next';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, HeartHandshake, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import MotionWrapper from "@/components/motion-wrapper";
+
+export const metadata: Metadata = {
+  title: 'Our Services',
+  description: 'Discover personalized in-home healthcare services tailored to your unique needs. We create custom care plans for elder care, post-operative care, and more.',
+};
 
 export default function ServicesPage() {
   return (

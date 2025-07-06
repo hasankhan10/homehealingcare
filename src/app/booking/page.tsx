@@ -1,6 +1,13 @@
+
+import type { Metadata } from 'next';
 import BookingForm from "@/components/booking-form";
 import MotionWrapper from "@/components/motion-wrapper";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+  title: 'Book an Appointment',
+  description: 'Schedule a home visit from one of our certified healthcare professionals. Our simple booking form makes it easy to get the care you need.',
+};
 
 export default function BookingPage() {
   return (
