@@ -1,3 +1,4 @@
+
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
     creator: '@yourtwitterhandle', // Replace with your Twitter handle
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: 'https://cdn-icons-png.flaticon.com/512/2975/2975233.png',
   }
 };
 
