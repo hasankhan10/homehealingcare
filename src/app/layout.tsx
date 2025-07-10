@@ -18,7 +18,8 @@ const siteConfig = {
   ogImage: 'https://i.pinimg.com/736x/cf/a1/ee/cfa1ee06bf82375d4f6f567356055f07.jpg',
   links: {
     twitter: '#', // Replace with your Twitter/X profile
-    facebook: '#', // Replace with your Facebook profile
+    facebook: 'https://www.facebook.com/share/1HcJTYeCvd/',
+    instagram: 'https://www.instagram.com/homehealingcare'
   },
 }
 
@@ -106,6 +107,7 @@ const jsonLd = {
   'openingHours': 'Mo,Tu,We,Th,Fr,Sa,Su 09:00-18:00',
   'sameAs': [
     siteConfig.links.facebook,
+    siteConfig.links.instagram,
     siteConfig.links.twitter
   ]
 };

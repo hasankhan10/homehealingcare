@@ -16,10 +16,10 @@ export default function Footer({ navLinks }: { navLinks: NavLink[] }) {
               Compassionate care in the comfort of your home.
             </p>
             <div className="mt-4 flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link href="https://www.facebook.com/share/1HcJTYeCvd/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link href="https://www.instagram.com/homehealingcare" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>
