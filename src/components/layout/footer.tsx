@@ -65,7 +65,7 @@ export default function Footer({ navLinks }: { navLinks: NavLink[] }) {
           <p className="mt-2">
             Made by{' '}
             <a
-              href="https://www.stovamedia.com"
+              href="https://www.stovamedia.in"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary"
